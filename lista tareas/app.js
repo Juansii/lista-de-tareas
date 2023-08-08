@@ -9,12 +9,10 @@ function agregarTarea() {
     let tareaNueva = document.createElement('div');
     tareaNueva.classList.add('tarea');
   
-    // Texto ingresado por el usuario.
     let texto = document.createElement('p');
     texto.innerText = input.value;
     tareaNueva.appendChild(texto);
   
-    // Crear y agregar contenedor de los iconos
     let iconos = document.createElement('div');
     iconos.classList.add('iconos'); 
     tareaNueva.appendChild(iconos);
@@ -28,7 +26,7 @@ function agregarTarea() {
     eliminar.classList.add('bi', 'bi-trash3-fill', 'icono-eliminar');
     eliminar.addEventListener('click', eliminarTarea);
   
-    iconos.append(completar, eliminar); // append me permite 
+    iconos.append(completar, eliminar); // append me permite pasar mas de un elemento
   
     // Agregar la tarea a la lista.
     listaDeTareas.appendChild(tareaNueva);
