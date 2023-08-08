@@ -2,7 +2,7 @@
   padding: 0;
   margin-right: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
   user-select: none;
 
 }
@@ -13,16 +13,17 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 0;
-  background: url(imagenes/fondo-colores.jpg) no-repeat center center / cover;
+  background: url(imagenes/fondo-colores.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .contenedor {
- width: 700px;
- min-height: 500px;
+ width: 600px;
+ min-height: 450px;
  border: 2px solid gray;
  background-color: white; 
- border-radius: 20px; 
+ border-radius: 10px; 
  padding: 40px;
  display: flex;
  flex-wrap: wrap;
@@ -31,13 +32,13 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: bold;
 }
 
 input {
   width: 80%;
-  height: 50px;
+  height: 45px;
   margin: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -49,24 +50,36 @@ button {
   width: 150px;
   height: 30px;
   cursor: pointer;
-  background-color: bisque;
-  border: 1px solid gray;
+  color: #fff;
+  background-color: #e9a5e0;
+  border: 0;
   border-radius: 10px;
 }
 
+button:hover {
+  width: 160px;
+  height: 35px; 
+  font-size: 16px;
+  font-weight: bold;
+  color: #e9a5e0;
+  background-color: #fff;
+  border: 1px solid #e9a5e0;
+  transition: .4s;
+}
+
 #lista-de-tareas {
-  width: 80%;
+  width: 100%;
   margin-top: 20px;
 }
 
 .tarea {
   width: 100%;
   min-height: 30px;
-  font-size: 25px;
+  font-size: 22px;
   padding: 10px;
   margin-top: 10px;
   color: white;
-  background-color: #407ba6;
+  background-color: #8fb4ce;
   border: 2px solid black;
   border-radius: 10px;
   display: flex;
@@ -93,7 +106,7 @@ i {
 }
 
 .icono-completar {
-  color: rgb(0, 255, 0);
+  color: rgb(24, 78, 24);
 }
 
 .icono-eliminar {
