@@ -58,7 +58,7 @@ input.addEventListener('keydown', (e) => {
 // le agrego este evento al botón para que cuando se haya creado la tarea el campo del input quede limpio
 boton.addEventListener('click', function() {
   input.value = ''; 
-});s
+});
 
 
 
